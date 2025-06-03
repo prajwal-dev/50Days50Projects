@@ -21,7 +21,7 @@ body{
 .progress-container{
     display: flex;
     max-width:100%;
-    width: 250px;
+    width: 350px;
     justify-content: space-between;
     margin-bottom: 30px;
     position: relative;
@@ -45,7 +45,7 @@ body{
     left: 0;    
     transform: translateY(-50%);
     height: 4px;
-    width: 20%;
+    width: 0%;
     z-index:-1;
     transition:0.4s ease;
 }
@@ -59,6 +59,29 @@ body{
     justify-content: center;
     align-items: center;
     border: 3px solid #e0e0e0;
+    transition: 0.4s ease;
 
 
+}
+
+.circle.active{
+    border-color: #3498db;
+}
+
+.btn{
+    font-family: inherit;
+    font-size: 14px;
+    padding: 10px 30px;
+    background-color: #3498db;
+    color: #fff;
+    border: 0;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.btn:active{
+    transform: scale(0.98);
+}
+.btn:disabled{
+    background-color: #e0e0e0;
+    cursor: not-allowed;
 }
